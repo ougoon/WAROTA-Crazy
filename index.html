@@ -78,8 +78,9 @@
 
                     // Title
                     $("<td width='45%'>" +
-                        "<a href='https://www.dmm.co.jp/age_check/=/?rurl=https%3A%2F%2Fwww.dmm.co.jp%2Ftop%2F" + info[
+                        "<a href='https://www.dmm.co.jp/age_check/=/" + info[
                             i]
+                        .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
